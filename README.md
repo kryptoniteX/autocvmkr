@@ -2,6 +2,9 @@
 With just a few lines of LaTeX code, you can quickly create a visually appealing and well-formatted CV that highlights your work experience, education, skills, and other relevant information.
 It has used GitHub action that complies the `*.tex` file and publishes a new PDF version when new changes are pushed to the repo
 
+## Overleaf
+This template is also available on OverLeaf. You can follow this link to use this CV template on Overleaf - https://www.overleaf.com/latex/templates/autocvmkr-cv-template/qqgywjpfdjwj
+
 
 ## Quickstart
 - Fork this repo (you can use the `Use this template` button)
