@@ -1,0 +1,333 @@
+%-------------------------
+% Resume in Latex
+% Author : Puneet Gautam, puneet.gautam0206@gmail.com, punitrajgautam@uiit.ac.in
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=0.6cm, top=0.5cm, right=0.6cm, bottom=0.5cm}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{:\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1},\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+% \renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{First Name Last Name} % Your Name
+\newcommand{\course}{Bachelor of Technology} % Your Course
+\newcommand{\roll}{Your Roll No} % Your Roll No.
+\newcommand{\phone}{Your Phone Number} % Your Phone Number
+\newcommand{\emaila}{your email} %Email 1
+\newcommand{\emailb}{your email} %Email 2
+\newcommand{\github}{kryptoniteX} %Github
+%\newcommand{\website}{https://www.yourwebsite.com} %Website
+\newcommand{\linkedin}{punitrajgautam} %linkedin
+
+
+
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+\parbox{2.35cm}{%
+
+\includegraphics[width=2cm,clip]{logo.png}
+
+}\parbox{\dimexpr\linewidth-2.8cm\relax}{
+\begin{tabularx}{\linewidth}{L r}
+  \textbf{\LARGE \name} & +91-\phone\\
+  
+  \course &  \href{mailto:\emailb}{\emailb}\\
+   {in Computer Science Engineering} &  \href{https://github.com/\github}{GitHub} \\ %$|$ \href{\website}{Website}\\
+  {University Institute of Technology, HPU, Shimla} & \href{https://www.linkedin.com/in/\linkedin/}{LinkedIn}
+\end{tabularx}
+}
+
+\vspace{-2mm}
+%-------------SUMMARY-----------------
+\section{\textbf{Summary}}
+This CV is automatically generated and deployed using the \href{https://github.com/kryptoniteX/autocvmkr}{autoCVmkr} template along with GitHub Actions such that a new version of the CV is compiled, published and ready for use when the cv.tex file is updated.
+%-----------EDUCATION-----------------
+\section{\textbf{Education}}
+\setlength{\tabcolsep}{5pt} % Default value: 6pt
+% \renewcommand{\arraystretch}{1.1} % Default value: 1
+\small{\begin{tabularx}
+{\dimexpr\textwidth-2mm\relax}{|c|C|c|c|c|}
+  \hline
+  \textbf{Degree } & \textbf{Institute} & \textbf{Board / University} & \textbf{CGPA/Percentage} & \textbf{Year}\\
+  \hline
+  B.Tech CSE & University Institute of Technology, Shimla & HPU, Shimla & 8.61 (Till 5th Sem) & 2019-2023\\
+ 
+  \hline
+  Senior Secondary & School Name & CBSE & 88.88\% & 2018 \\
+  \hline
+  Matriculation & School Name & HPBOSE & 85.57\% & 2016 \\
+  \hline
+\end{tabularx}}
+\vspace{-1mm}
+
+%-----------EXPERIENCE-----------------
+\section{\textbf{Experience}}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Company Name}{Location}
+      {Position}{June 2021 - July 2021}
+      \resumeItemListStart
+    \item {About work}
+    \item {About Work}
+    \resumeItemListEnd
+    
+%    \vspace{-1mm}
+%    \resumeSubheading
+%      {Company Name}{Location}
+%      {Position}{June 2021 - July 2021}
+%      \resumeItemListStart
+%    \item {About work}
+%    \item {About Work}
+%    \resumeItemListEnd
+    
+    
+    % \item {More work done } .....
+
+    
+  
+      
+  \resumeSubHeadingListEnd
+\vspace{-6.5mm}
+%-----------PROJECTS-----------------
+\section{\textbf{Projects}}
+\resumeSubHeadingListStart
+    
+    \resumeProject
+      {Project Name} %Project Name
+      {Course or faculty} %Project Name, Location Name
+      {Mar 2021 - Apr 2021} %Event Dates
+      {\href{Github Link}{\textbf{Github}}} %Website
+      \resumeItemListStart
+        \item {About it}
+        \item {About it}
+    \resumeItemListEnd
+    
+     \vspace{-1mm}
+     
+    \resumeProject
+      {Project Name} %Project Name
+      {Course or faculty} %Project Name, Location Name
+      {Mar 2021 - Apr 2021} %Event Dates
+      {\href{Github Link}{\textbf{Github}}} %Website
+      \resumeItemListStart
+        \item {About it}
+        \item {About it}
+    \resumeItemListEnd
+    
+     
+    
+   
+      
+  \resumeSubHeadingListEnd
+\vspace{-7.5mm}
+
+\section{\textbf{Technical Skills}}
+ \resumeHeadingSkillStart
+  \resumeSubItem{Programming Languages} % Category
+    { C/C++, Python}
+    
+    %\vspace{-0.5mm}
+    
+ \resumeSubItem{Tools and Frameworks} % Category
+    {Jupyter, Visual Studio & Figma} % Skills
+    
+    %\vspace{-0.5mm}
+    
+ \resumeSubItem{Operating Systems} % Category
+    {Windows, Linux & Android} % Skills
+    
+    %\vspace{-0.5mm}
+    
+ 
+ \resumeHeadingSkillEnd
+
+\vspace{-1.5mm}
+
+\section{\textbf{Key courses taken}}
+\resumeHeadingSkillStart
+ \resumeSubItem{CSE \& Maths} % Category
+    {Introduction to C, Fundamentals of Computers, Object Oriented Paradigm in C++, Data Structures and Algorithms, Computer Organization \& Architecture, Python Programming, Operating System, Database Management System, Statistical Methods, Discrete Mathematics, Numerical Methods, Computer Networks \& Security, Software Engineering, Compiler Design, Computer Graphics \& Multimedia}
+    %\vspace{-0.5mm}
+\resumeSubItem{Others}
+ {Basic Electronics \& Electrical Engineering, Engineering Drawing, Digital Electronics, Principle of Engineering Economics and Management, Microprocessor: Theory \& Applications}
+%  \resumeSubItem{Electrical and Electronics} % Category
+%     {Advanced Control Systems, Digital Systems, Microprocessors} % Skills
+ \resumeHeadingSkillEnd
+
+\vspace{-1mm}
+%---------------CERTIFICATIONS-------------------
+\section{\textbf{Certifications}}
+\resumeSubHeadingListStart
+    \resumeItemListStart
+    \item {\href{paste link here}{\textbf{ Certificate Name}}}
+    {Certifying Institution Name} %Certifying Authority
+    \item {\href{paste link here}{\textbf{ Certificate Name}}}
+    {Certifying Institution Name} %Certifying Authority
+    \item {\href{paste link here}{\textbf{ Certificate Name}}}
+    {Certifying Institution Name} %Certifying Authority
+    
+\resumeSubHeadingListEnd
+\vspace{-4mm}
+
+%-----------TRAINING-----------------
+\section{\textbf{Vocational Training}}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Institution Name}{Location}
+      {Course Name}{Start Time-EndTime}
+      \resumeItemListStart
+    \item {About course, blah blah}
+    \item {About course, blah blah}
+    \resumeItemListEnd 
+
+
+\section{\textbf{Positions of Responsibility}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{Secretary} % Position
+    {XYZ Club, UIT Shimla} %Club,Event
+    {Apr. 2018 - Apr. 2019} %Tenure Period
+\resumePOR{Secretary} % Position
+    {XYZ Club, UIT Shimla} %Club,Event
+    {Apr. 2018 - Apr. 2019} %Tenure Period
+\resumeSubHeadingListEnd
+\vspace{-4mm}
+
+
+\section{\textbf{Miscellaneous}}
+\vspace{-0.1mm}
+\resumeSubHeadingListStart
+\resumePOR{Achievement 1} % Award
+    { About it} % Event
+    {2017} %Event Year
+\vspace{-0.1mm}
+\resumePOR{Achievement 2} % Award
+    {About it} % Event
+    {2021} %Event Year
+\vspace{-0.1mm}
+    
+
+\vspace{-1.2mm}
+\resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
