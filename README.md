@@ -21,5 +21,5 @@ Please start a new discussion or issue if you encounter problems
 
 PS: If you liked the template, do star :star: it! Thanks!
 
-##Disclaimer
+## Disclaimer
 Please note that this project is for personal use only and should not be used for any commercial purposes. The use of this package is at your own risk and the developers are not responsible for any consequences resulting from its use.
