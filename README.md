@@ -13,7 +13,7 @@ Optionally, while forking this repo, you can get a direct link to the generated 
 ![image](https://user-images.githubusercontent.com/89017901/211071544-d6c36ec0-f3c4-4908-be9b-6c60e700ebab.png)
 
 
-Now, once your site is published, your CV will be accessible at: https://username.github.io/autoCV/cv.pdf
+Now, once your site is published, your CV will be accessible at: https://username.github.io/autocvmkr/cv.pdf
 
 
 ## Issues
